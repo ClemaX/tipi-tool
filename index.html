@@ -1,0 +1,51 @@
+<head>
+	<script src="/js/index.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<header class="section-header">
+		<h2>Parameters</h2>
+	</header>
+	<section class="parameter-section">
+		<form id="parameters" class="parameters">
+			<div class="parameter">
+				<label for="base-diameter">Base diameter (in cm):</label>
+				<input type="number" id="base-diameter" name="base-diameter" min="1" placeholder="Enter diameter...">
+			</div>
+			<div class="parameter">
+				<label for="tip-diameter">Tip diameter (in cm):</label>
+				<input type="number" id="tip-diameter" name="tip-diameter" min="1" placeholder="Enter diameter...">
+			</div>
+			<div class="parameter">
+				<label for="height">Height (in cm):</label>
+				<input type="number" name="height" min="1" placeholder="Enter height...">
+			</div>
+		</form>
+	</section>
+
+
+	<header class="section-header">
+		<h2>Materials</h2>
+	</header>
+	<section class="materials-section">
+		<ul class="materials">
+			<li class="material">
+				<span>Log length: </span>
+				<span id="log-length">1cm</span>
+			</li>
+			<li class="material">
+				<span>Tarpaulin dimensions: </span>
+				<span id="tarpaulin-dimensions">1x1cm</span>
+			</li>
+		</ul>
+	</section>
+
+	<header class="section-header">
+		<h2>Preview</h2>
+	</header>
+	<section class="preview-section">
+		<canvas class="preview-tipi" id="preview-tipi" width="500" height="500"></canvas>
+		<canvas class="preview-tarpaulin" id="preview-tarpaulin" width="500" height="500"></canvas>
+	</section>
+</body>
